@@ -67,7 +67,7 @@ public class LineageDozeService extends Service {
 
         public LineageProximitySensor(Context context) {
             mSensorManager = (SensorManager)context.getSystemService(Context.SENSOR_SERVICE);
-            mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+            mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY, false);
         }
 
         @Override
